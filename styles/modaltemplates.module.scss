@@ -1,0 +1,65 @@
+.modal_container {
+  width: 80%;
+  margin-inline: auto;
+
+  //   display: flex;
+  .modal_header {
+    h1 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: clamp(1rem, 20vw, 2rem);
+      line-height: 48px;
+      letter-spacing: -0.03em;
+      margin-top: 1rem;
+    }
+    p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(0.7rem, 20vw, 1rem);
+      line-height: 24px;
+      letter-spacing: -0.015em;
+      width: 48ch;
+      margin-top: 1rem;
+    }
+  }
+  .modal_content {
+    margin-top: 4rem;
+    .select_template_title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      :first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background-color: #eaeaea;
+        border-radius: 50%;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+      }
+      :last-child {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: -0.03em;
+      }
+    }
+    .modal_templates {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 12.5rem);
+
+      gap: 1rem;
+    }
+  }
+}

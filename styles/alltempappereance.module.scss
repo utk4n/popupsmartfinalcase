@@ -1,0 +1,51 @@
+.modal_container {
+  width: 80%;
+  margin-inline: auto;
+  border: 2px solid fuchsia;
+  .modal_content {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+place-content: center;
+    .select_options_section{
+      .select_template_title {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        :first-child {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          background-color: rgb(234, 234, 234);
+          border-radius: 50%;
+          font-family: 'Poppins';
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.03em;
+        }
+        :last-child {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 36px;
+          letter-spacing: -0.03em;
+        }
+      }
+    }
+    .modal_templates {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 12.5rem);
+
+      gap: 1rem;
+    }
+  }
+  .modal_preview {
+    border: 2px solid blue;
+  }
+}

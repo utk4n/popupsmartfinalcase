@@ -16,6 +16,25 @@
   src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 }
 
+// .card_hover{
+//   @apply bg-hoverCardBg
+// }
+
+.template_card_wrapper_hover {
+  @apply flex items-center justify-center  opacity-0 hover:bg-hoverCardBg hover:opacity-100 absolute h-full w-full rounded-lg transition-all;
+}
+
+.select_template_btn {
+  @apply w-40 h-12 bg-templateHoverBtn rounded-xl flex items-center justify-center  shadow-btnShadow text-primary font-semibold leading-5;
+}
+
+.template_card_container {
+  @apply bg-secondary flex items-center justify-center rounded-lg relative cursor-pointer;
+}
+.template_content_input {
+  @apply border outline-none py-2 px-3 rounded-lg border-dragDrop focus:border-contentFocus w-full placeholder:font-normal placeholder:text-black;
+}
+
 // ---------- ROOT ---------------
 
 :root {
@@ -23,6 +42,7 @@
   --bg-color: rgba(125, 74, 234, 1);
   --bg-footer: #666666;
   --try-btn-shadow: 0px 3px 7px 1px rgba(125, 74, 234, 0.2);
+  --hover-bg-color: rgba(125, 74, 234, 0.6);
 }
 
 // ------------- ROOT END --------
@@ -32,9 +52,6 @@ html {
   min-height: 100%;
 }
 
-body {
-  background: var(--bg-body-color);
-}
 // ------------ GENERAL END --------
 
 header {
@@ -86,6 +103,7 @@ header {
 
         h6 {
           margin-left: 0.5rem;
+          cursor: pointer;
         }
       }
       .navlinks {
@@ -305,7 +323,7 @@ footer {
       transform: translateX(100%);
       div {
         display: flex;
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 12px;
         gap: 0.5rem;
         font-family: 'Poppins';
